@@ -1,0 +1,24 @@
+/* src/styles/footer.css */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+  
+  .copyright {
+    font-size: 0.9rem;
+  }
+  

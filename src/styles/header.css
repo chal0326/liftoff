@@ -1,0 +1,19 @@
+/* src/styles/header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    display: flex;
+  }  

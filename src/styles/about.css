@@ -1,0 +1,30 @@
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .intro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .skills,
+  .experience,
+  .education {
+    margin-bottom: 2rem;
+  }
+  
+  .skills ul,
+  .experience ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .job,
+  .degree {
+    margin-bottom: 1.5rem;
+  }
+  
