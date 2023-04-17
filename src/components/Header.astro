@@ -1,14 +1,22 @@
-<!-- src/components/Header.astro -->
-<header class="header">
-    <a href="/" class="logo">Your Name</a>
-    <nav class="nav">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  
+
+---
+const siteTitle = 'Cody L. Hall';
+const pages = [
+  { title: 'Home', href: '/' },
+  { title: 'Portfolio', href: '/portfolio' },
+  { title: 'Blog', href: '/blog' },
+  { title: 'About', href: '/about' },
+  { title: 'Contact', href: '/contact' },
+];
+---
+
+<header>
+  <nav>
+    <a class="logo" href="/">{siteTitle}</a>
+    <ul class="menu">
+      {pages.map(page => (
+        <li><a href={page.href}>{page.title}</a></li>
+      ))}
+    </ul>
+  </nav>
+</header>
